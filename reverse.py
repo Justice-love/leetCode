@@ -14,9 +14,9 @@ class Solution(object):
             xStr = '-' + xStr
 
         lv = long(xStr)
-        if lv > 2147483647 and not f:
+        if lv > 2 ** 31 -1 and not f:
             return 0
-        elif lv < -2147483648 and f:
+        elif lv < -2 ** 31 and f:
             return 0
         else:
             return int(xStr)
@@ -31,5 +31,4 @@ class Solution(object):
         else:
             return str
 
-s = Solution()
-print  s.reverse(1534236469)
+print 2 ** 31 -1
