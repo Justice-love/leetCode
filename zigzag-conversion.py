@@ -5,6 +5,7 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
+        print len(s)
         if numRows == 1:
             return s
         elif numRows == 2:
@@ -71,5 +72,5 @@ class Solution(object):
 
 
 s = Solution()
-print s.convert('ABC', 2)
+print s.convert('gnvhcxwaqkxhazrpthjdlcmraadnnmiuaebe', 14)
 
